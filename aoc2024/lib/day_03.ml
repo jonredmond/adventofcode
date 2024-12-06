@@ -1,13 +1,3 @@
-let read_lines filename =
-  let file = open_in filename in
-  let rec imp acc =
-    try imp (input_line file :: acc)
-    with End_of_file ->
-      close_in file;
-      List.rev acc
-  in
-  imp []
-
 let mul_groups input =
   let regex =
     Re.compile
@@ -60,10 +50,3 @@ let mul_groups_ignore_disabled input =
             else mul_groups_ignore_disabled' acc false xs)
   in
   mul_groups_ignore_disabled' 0 true matches
-
-let () =
-  let input = read_lines "input.dat" in
-  let combined_input = String.concat "" input in
-  Printf.printf "Raw result: %d\n" (mul_groups combined_input);
-  Printf.printf "Removing disabled commands: %d\n"
-    (mul_groups_ignore_disabled combined_input)

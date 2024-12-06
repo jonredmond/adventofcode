@@ -1,0 +1,14 @@
+(executable
+ (public_name day_01)
+ (name day_01)
+ (libraries aoc2024))
+
+(executable
+ (public_name day_02)
+ (name day_02)
+ (libraries aoc2024))
+
+(executable
+ (public_name day_03)
+ (name day_03)
+ (libraries aoc2024))
