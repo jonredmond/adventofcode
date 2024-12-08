@@ -12,3 +12,21 @@
  (public_name day_03)
  (name day_03)
  (libraries aoc2024))
+
+(executable
+ (public_name day_04)
+ (name day_04)
+ (libraries aoc2024)
+ (modes byte exe))
+
+(executable
+ (public_name day_05)
+ (name day_05)
+ (libraries aoc2024)
+ (modes byte exe))
+
+(executable
+ (public_name day_06)
+ (name day_06)
+ (libraries aoc2024)
+ (modes byte exe))
