@@ -30,3 +30,9 @@
  (name day_06)
  (libraries aoc2024)
  (modes byte exe))
+
+(executable
+ (public_name day_07)
+ (name day_07)
+ (libraries aoc2024)
+ (modes byte exe))
